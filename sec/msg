@@ -1,0 +1,53 @@
+Listening on wlan1... (Ethernet)
+
+ wlan1 ->	86:7C:1C:90:6A:87     49.74.216.145     255.255.252.0
+
+SSL dissection needs a valid 'redir_command_on' script in the etter.conf file
+Privileges dropped to UID 65534 GID 65534...
+
+  28 plugins
+  40 protocol dissectors
+  55 ports monitored
+7587 mac vendor fingerprint
+1766 tcp OS fingerprint
+2183 known services
+
+Randomizing 1023 hosts for scanning...
+Scanning the whole netmask for 1023 hosts...
+254 hosts added to the hosts list...
+
+ARP poisoning victims:
+
+ GROUP 1 : 49.74.216.1 00:25:9E:82:A2:E7
+
+ GROUP 2 : ANY (all the hosts in the list)
+Starting Unified sniffing...
+
+
+Text only Interface activated...
+Hit 'h' for inline help
+
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [4C:0F:6E:8C:8E:B1] REQUEST 112.86.187.230
+DHCP: [48:5D:60:E0:8C:21] DISCOVER 
+DHCP: [10.20.215.12] OFFER : 10.20.215.166 255.255.255.0 GW 10.20.215.20 DNS 202.119.230.8 
+DHCP: [48:5D:60:E0:8C:21] DISCOVER 
+DHCP: [10.20.215.12] OFFER : 10.20.215.166 255.255.255.0 GW 10.20.215.20 DNS 202.119.230.8 
+DHCP: [48:5D:60:E0:8C:21] DISCOVER 
+DHCP: [10.20.215.12] OFFER : 10.20.215.166 255.255.255.0 GW 10.20.215.20 DNS 202.119.230.8 
+DHCP: [10.20.215.12] OFFER : 10.20.215.166 255.255.255.0 GW 10.20.215.20 DNS 202.119.230.8 
+Closing text interface...
+
+ARP poisoner deactivated.
+RE-ARPing the victims...
+DHCP: [E8:99:C4:E0:1E:A0] DISCOVER 
+DHCP: [E8:99:C4:E0:1E:A0] DISCOVER 
+DHCP: [E8:99:C4:E0:1E:A0] DISCOVER 

