@@ -1,0 +1,11 @@
+  This Program is Coded for My Network Information security Final Homework! 
+  Definately saying, it is not a "Software".Maybe it better to call it a "Script with GUI":
+it is a serial of many Calling from the system and some softwares."Tshark" and "Ettercap" are 
+needed for use.
+  The  dir "sec" must be put in "/var/sec".It contains some python scripts and files needed.
+  
+  When coding this programe,Multi-Thread and communication between different process are the 
+knowledge I Learnd of most value.Meanwhile,This is my first coding with GUI in python.Wxpython
+is the base of the python GUI.And boa-constructor is used for generate GUI codes.//Next time,
+I shall code without it.
+
